@@ -1,0 +1,27 @@
+{
+  "name": "GiltHub",
+  "short_name": "GiltHub",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/favicon/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#f8fafc",
+  "background_color": "#f8fafc",
+  "display": "standalone"
+}
