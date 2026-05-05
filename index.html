@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,9 +18,41 @@
     />
     <meta name="apple-mobile-web-app-title" content="GiltHub" />
     <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
     <title>GiltHub</title>
   </head>
   <body>
-    GiltHub
+    <header>
+      <div class="logotipo">
+        <div class="logo" onclick="location.reload()"></div>
+        <span onclick="location.reload()">Dashboard</span>
+      </div>
+
+      <div class="search-container">
+        <i data-feather="search" class="search-icon"></i>
+        <input
+          type="text"
+          name="search"
+          id="search"
+          class="search"
+          placeholder="Digite '/' para pesquisar"
+        />
+      </div>
+
+      <button
+        type="button"
+        data-theme-toggle
+        aria-label="Mudar para o tema claro"
+        class="theme-toggle"
+      >
+        <div class="theme-icon"></div>
+      </button>
+    </header>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="theme.js"></script>
   </body>
 </html>
