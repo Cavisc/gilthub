@@ -195,7 +195,7 @@ header {
 
 .explanation-use {
   background-color: var(--text);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   color: var(--bg);
   font-size: 1.5rem;
   font-weight: 300;
@@ -238,7 +238,8 @@ header {
   }
 
   .characters {
-    width: 50%;
+    height: 25%;
+    width: 100%;
     z-index: -1;
   }
 }
