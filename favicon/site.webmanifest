@@ -23,5 +23,11 @@
   ],
   "theme_color": "#f8fafc",
   "background_color": "#f8fafc",
-  "display": "standalone"
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "minimal-ui"],
+  "orientation": "portrait",
+  "start_url": "/",
+  "scope": "/",
+  "description": "Pesquise usuários do GitHub e veja sua 'reputação'.",
+  "id": "/"
 }
