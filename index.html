@@ -30,7 +30,7 @@
       </div>
 
       <div class="search-container">
-        <i data-feather="search" class="search-icon"></i>
+        <i data-feather="search" class="icon search-icon"></i>
         <input
           type="text"
           name="search"
@@ -51,7 +51,7 @@
     </header>
 
     <main>
-      <section class="welcome">
+      <!--section class="welcome">
         <div class="welcome-message">
           <h1>Bem-vindo ao GiltHub</h1>
           <p>Minha pequena versão do GitHub</p>
@@ -70,11 +70,125 @@
           </p>
         </div>
         <div class="characters"></div>
+      </section-->
+
+      <section class="user-profile">
+        <aside class="user-data">
+          <img
+            src="https://avatars.githubusercontent.com/u/80989822?v=4"
+            alt="Carlos Vinícius de Souza Coelho"
+            class="user-avatar"
+            aria-label="Avatar do usuário"
+          />
+          <h1 class="user-name" aria-label="Nome de usuário">
+            Carlos Vinícius de Souza Coelho
+          </h1>
+          <span class="user-nickname" aria-label="Nickname de usuário"
+            >Cavisc</span
+          >
+          <a
+            href="https://github.com/Cavisc"
+            class="user-link"
+            target="_blank"
+            aria-label="Visitar perfil"
+            title="Visitar perfil"
+            >Visitar perfil</a
+          >
+          <div class="user-info">
+            <span class="user-bio" aria-label="Bio do usuário"
+              >lorem ipsum dolor sit amet</span
+            >
+            <span
+              class="user-followers-following"
+              aria-label="Número de seguidores e seguindo"
+              ><i
+                data-feather="users"
+                class="icon icon-followers-following"
+              ></i>
+              <span><strong>9</strong> followers</span>
+              <span class="divider">·</span>
+              <span><strong>5</strong> following</span></span
+            >
+            <span class="user-company" aria-label="Empresa do usuário"
+              ><i data-feather="briefcase" class="icon"></i
+              ><strong>Google</strong></span
+            >
+            <span class="user-location" aria-label="Localização do usuário"
+              ><i data-feather="map-pin" class="icon"></i>Minas Gerais,
+              Brasil</span
+            >
+            <span class="user-email" aria-label="Email do usuário"
+              ><i data-feather="mail" class="icon"></i
+              >cavisc.icm@gmail.com</span
+            >
+            <a
+              href="https://cavisc.github.io"
+              class="user-blog"
+              target="_blank"
+              title="Visitar blog"
+              aria-label="Visitar blog"
+              ><i data-feather="link" class="icon"></i
+              >https://cavisc.github.io</a
+            >
+            <span
+              class="user-repositories-count"
+              aria-label="Número de repositórios do usuário"
+              ><i data-feather="book" class="icon"></i
+              ><strong>25</strong> repositórios
+            </span>
+            <span
+              class="user-created-date"
+              aria-label="Data de criação do usuário"
+              ><i data-feather="calendar" class="icon"></i>Criação
+              <strong>19/03/2021</strong></span
+            >
+          </div>
+        </aside>
+        <section class="repos">
+          <h3 class="repo-title" aria-label="Repositórios">Repositórios</h3>
+          <div class="repos-container">
+            <div class="repo">
+              <div class="repo-name">
+                <i data-feather="book-open" class="icon"></i>
+                <a
+                  href="#"
+                  class="repo-link"
+                  target="_blank"
+                  aria-label="Visitar repositório"
+                  title="Visitar repositório"
+                  >Nome do Repositório</a
+                >
+              </div>
+              <span
+                class="repo-description"
+                aria-label="Descrição do Repositório"
+                >Descrição do Repositório</span
+              >
+              <div class="repo-infos">
+                <span
+                  class="repo-language"
+                  aria-label="Linguagem do Repositório"
+                  ><div class="repo-language-color"></div>
+                  Rust</span
+                >
+                <span class="repo-stars" aria-label="Número de estrelas"
+                  ><i data-feather="star" class="icon icon-repo-infos"></i
+                  >0</span
+                >
+                <span class="repo-forks" aria-label="Número de forks"
+                  ><i data-feather="git-branch" class="icon icon-repo-infos"></i
+                  >0</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
     <script>
       feather.replace();
     </script>
     <script src="theme.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
