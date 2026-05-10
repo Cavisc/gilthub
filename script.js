@@ -1,9 +1,10 @@
 document.addEventListener("keydown", (event) => {
   if (event.key === "/") {
-    event.preventDefault();
     const searchInput = document.getElementById("search");
+    const activeElement = document.activeElement;
 
-    if (searchInput) {
+    if (searchInput && (activeElement !== searchInput || !activeElement)) {
+      event.preventDefault();
       searchInput.focus();
     }
   }

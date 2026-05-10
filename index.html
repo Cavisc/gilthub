@@ -26,7 +26,7 @@
     <header>
       <div class="logotipo">
         <div class="logo" onclick="location.reload()"></div>
-        <span onclick="location.reload()">Dashboard</span>
+        <span onclick="location.reload()">GiltHub</span>
       </div>
 
       <div class="search-container">
@@ -51,10 +51,20 @@
     </header>
 
     <main>
-      <!--section class="welcome">
+      <section class="welcome">
         <div class="welcome-message">
           <h1>Bem-vindo ao GiltHub</h1>
-          <p>Minha pequena versão do GitHub</p>
+          <p>
+            Minha pequena versão do
+            <a
+              href="https://github.com"
+              class="welcome-link"
+              target="_blank"
+              aria-label="Visitar Github"
+              title="Visitar Github"
+              >GitHub</a
+            >
+          </p>
         </div>
         <div class="explanation">
           <p class="explanation-word">
@@ -69,10 +79,27 @@
             <em>GitHub</em> e ver a sua <strong>reputação</strong> por lá.
           </p>
         </div>
-        <div class="characters"></div>
-      </section-->
+        <div class="characters-bg"></div>
+        <img
+          src="./assets/cat.png"
+          alt="Desenho de um gato"
+          class="character cat"
+        />
+        <img
+          src="./assets/copilot.png"
+          alt="Desenho de um piloto"
+          class="character copilot"
+        />
+        <img
+          src="./assets/duck.png"
+          alt="Desenho de um pato"
+          class="character duck"
+        />
+      </section>
 
-      <section class="user-profile">
+      <section class="motivation"></section>
+
+      <!--section class="user-profile">
         <aside class="user-data">
           <img
             src="https://avatars.githubusercontent.com/u/80989822?v=4"
@@ -169,7 +196,13 @@
                   class="repo-language"
                   aria-label="Linguagem do Repositório"
                   ><div class="repo-language-color"></div>
-                  Rust</span
+                  <a
+                    href="#"
+                    class="repo-language-link"
+                    target="_blank"
+                    aria-label="Visitar linguagem"
+                    >Rust</a
+                  ></span
                 >
                 <span class="repo-stars" aria-label="Número de estrelas"
                   ><i data-feather="star" class="icon icon-repo-infos"></i
@@ -183,7 +216,7 @@
             </div>
           </div>
         </section>
-      </section>
+      </section-->
     </main>
     <script>
       feather.replace();
