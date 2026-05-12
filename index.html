@@ -24,7 +24,7 @@
   </head>
   <body>
     <header>
-      <div class="logotipo">
+      <div class="logo-container">
         <div class="logo" onclick="location.reload()"></div>
         <span onclick="location.reload()">GiltHub</span>
       </div>
@@ -137,6 +137,24 @@
         </div>
       </section>
 
+      <section class="popular-searches">
+        <h2 class="popular-searches-title">
+          <i data-feather="search" class="popular-searches-icon"></i>
+          Experimente pesquisar alguém popular
+        </h2>
+        <div class="popular-searches-suggestions">
+          <div class="popular-searches-suggestion">
+            <img
+              src="https://avatars.githubusercontent.com/u/80989822?v=4"
+              alt="Carlos Vinícius de Souza Coelho"
+              class="suggestion-avatar"
+              aria-label="Avatar do usuário sugerido"
+            />
+            <span class="suggestion-nickname">Cavisc</span>
+            <i data-feather="arrow-right" class="suggestion-icon"></i>
+          </div>
+        </div>
+      </section>
       <!--section class="user-profile">
         <aside class="user-data">
           <img
@@ -256,10 +274,8 @@
         </section>
       </section-->
     </main>
-    <script>
-      feather.replace();
-    </script>
-    <script src="theme.js"></script>
-    <script src="script.js"></script>
+    <script src="./script/theme.js"></script>
+    <script type="module" src="./script/carousel/carousel.js"></script>
+    <script src="./script/search-shortcut.js"></script>
   </body>
 </html>
