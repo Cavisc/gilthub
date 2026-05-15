@@ -12,11 +12,11 @@ import { startScroll } from "./carousel-scroll.js";
     const suggestion = event.target.closest(".popular-searches-suggestion");
     if (!suggestion) return;
 
-    const nickname = suggestion.querySelector(".suggestion-nickname");
-    if (!nickname) return;
+    const username = suggestion.querySelector(".suggestion-username");
+    if (!username) return;
 
     const searchInput = document.getElementById("search");
-    searchInput.value = nickname.textContent;
+    searchInput.value = username.textContent;
     searchInput.focus();
 
     const length = searchInput.value.length;

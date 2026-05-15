@@ -11,7 +11,7 @@ export function renderCarousel(container) {
               class="suggestion-avatar"
               aria-label="Avatar do usuário sugerido"
             />
-            <span class="suggestion-nickname">${popularUser.username}</span>
+            <span class="suggestion-username">${popularUser.username}</span>
             <i data-feather="arrow-right" class="suggestion-icon"></i>
           </div>`;
   });

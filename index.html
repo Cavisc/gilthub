@@ -150,9 +150,47 @@
               class="suggestion-avatar"
               aria-label="Avatar do usuário sugerido"
             />
-            <span class="suggestion-nickname">Cavisc</span>
+            <span class="suggestion-username">Cavisc</span>
             <i data-feather="arrow-right" class="suggestion-icon"></i>
           </div>
+        </div>
+      </section>
+      <section class="relevance">
+        <div class="relevance-header">
+          <h1 class="relevance-title">O que torna alguém relevante?</h1>
+          <p class="relevance-message">
+            Alguns indicadores ajudam a entender o alcance e o impacto de alguém
+            e de seus projetos na comunidade.
+          </p>
+          <div class="cat-jetpack">
+            <img src="./assets/cat_jetpack.png" alt="" />
+          </div>
+        </div>
+        <div class="relevance-section">
+          <h2 class="relevance-section-title">
+            <i data-feather="users" class="relevance-section-icon"></i
+            >Seguidores
+          </h2>
+          <p class="relevance-section-message">
+            Mostram o alcance e a relevância de um perfil na comunidade.
+          </p>
+        </div>
+        <div class="relevance-section">
+          <h2 class="relevance-section-title">
+            <i data-feather="star" class="relevance-section-icon"></i>Estrelas
+          </h2>
+          <p class="relevance-section-message">
+            Indicam reconhecimento e interesse em um projeto.
+          </p>
+        </div>
+        <div class="relevance-section">
+          <h2 class="relevance-section-title">
+            <i data-feather="git-branch" class="relevance-section-icon"></i
+            >Forks
+          </h2>
+          <p class="relevance-section-message">
+            Mostram quantas pessoas utilizaram ou contribuiram com um projeto.
+          </p>
         </div>
       </section>
       <!--section class="user-profile">
@@ -166,7 +204,7 @@
           <h1 class="user-name" aria-label="Nome de usuário">
             Carlos Vinícius de Souza Coelho
           </h1>
-          <span class="user-nickname" aria-label="Nickname de usuário"
+          <span class="user-username" aria-label="Username de usuário"
             >Cavisc</span
           >
           <a
@@ -271,11 +309,33 @@
               </div>
             </div>
           </div>
+          <div class="pagination">
+            <span class="pagination-button previous-button disabled"
+              ><i data-feather="chevron-left" class="previous-button-icon"></i
+              >Anterior</span
+            >
+            <span class="pagination-button active">1</span>
+            <span class="pagination-button">2</span>
+            <span class="pagination-button">3</span>
+            <span class="pagination-button">4</span>
+            <span class="pagination-button">5</span>
+            <span class="pagination-button">6</span>
+            <span class="pagination-button">7</span>
+            <span class="pagination-button ellipsis">...</span>
+            <span class="pagination-button">96</span>
+            <span class="pagination-button next-button"
+              >Próximo<i
+                data-feather="chevron-right"
+                class="next-button-icon"
+              ></i
+            ></span>
+          </div>
         </section>
       </section-->
     </main>
     <script src="./script/theme.js"></script>
     <script type="module" src="./script/carousel/carousel.js"></script>
-    <script src="./script/search-shortcut.js"></script>
+    <script type="module" src="./script/github-api.js"></script>
+    <script src="./script/search.js"></script>
   </body>
 </html>
