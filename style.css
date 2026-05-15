@@ -275,12 +275,11 @@ header {
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    scale: 0;
-    top: 100%;
+    transform: translateY(50vh) scale(0);
   }
   100% {
     opacity: 1;
-    scale: 1;
+    transform: translateY(0) scale(1);
   }
 }
 
@@ -327,8 +326,9 @@ header {
     fadeIn 1s ease-out normal,
     bounceCat 3.2s cubic-bezier(0.34, 1.56, 0.64, 1) infinite 1s;
   right: 38%;
+  rotate: 30deg;
   top: 48%;
-  width: 10rem;
+  width: 9rem;
 }
 
 .copilot {
@@ -336,8 +336,9 @@ header {
     fadeIn 1.5s ease-out normal,
     bounceCopilot 4s cubic-bezier(0.22, 1, 0.36, 1) infinite 1.9s;
   left: 37%;
+  rotate: -45deg;
   top: 59%;
-  width: 11.5rem;
+  width: 10.5rem;
 }
 
 .duck {
@@ -345,8 +346,9 @@ header {
     fadeIn 2s ease-out normal,
     bounceDuck 2.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite 2.4s;
   right: 43%;
+  rotate: 20deg;
   top: 77%;
-  width: 8rem;
+  width: 7rem;
 }
 
 .discover {
@@ -550,11 +552,6 @@ header {
 }
 
 .relevance {
-  background: linear-gradient(
-    0deg,
-    var(--gradient-color-77) 0%,
-    transparent 30%
-  );
   border-bottom: 1px solid var(--gradient-color-64);
   border-top: 1px solid var(--gradient-color-64);
   display: grid;
@@ -634,6 +631,11 @@ header {
 }
 
 .relevance-section:nth-child(4) {
+  background: linear-gradient(
+    0deg,
+    var(--gradient-color-77) 0%,
+    transparent 80%
+  );
   border-right: 1px solid var(--gradient-color-64);
   grid-row: 3 / 4;
 }
@@ -923,19 +925,19 @@ header {
   .cat {
     right: 23%;
     top: 65%;
-    width: 9rem;
+    width: 8rem;
   }
 
   .copilot {
     left: 20%;
     top: 73%;
-    width: 10.5rem;
+    width: 9.5rem;
   }
 
   .duck {
     right: 35%;
     top: 85%;
-    width: 7rem;
+    width: 6rem;
   }
 
   .discover-container {
@@ -981,6 +983,12 @@ header {
 
   .relevance-header {
     border-bottom: 1px solid var(--gradient-color-64);
+  }
+
+  .cat-jetpack {
+    background:
+      url(./assets/stars.png) no-repeat center/contain,
+      linear-gradient(-20deg, transparent 0%, transparent 70%);
   }
 
   .relevance-section {
@@ -1102,6 +1110,10 @@ header {
 
   .relevance {
     padding: 0;
+  }
+
+  .relevance-title {
+    font-size: 2.8rem;
   }
 
   .user-profile {
