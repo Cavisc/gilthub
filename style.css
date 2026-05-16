@@ -17,7 +17,6 @@
 }
 
 :root {
-  --gray: #5e6472;
   --blue: #4493f8;
 }
 
@@ -29,7 +28,8 @@
   --gradient-color-27: rgba(0, 0, 0, 0.5);
   --gradient-color-50: rgba(0, 0, 0, 0.25);
   --gradient-color-64: rgba(0, 0, 0, 0.13);
-  --gradient-color-77: rgba(0, 0, 0, 0.01);
+  --gradient-color-77: rgba(0, 0, 0, 0.05);
+  --gray: rgba(94, 100, 114, 1);
   --opacity: 1;
   --logo: url("./assets/rounded_dark.png");
   --icon: url("./assets/sun.png");
@@ -45,6 +45,7 @@
   --gradient-color-50: rgba(248, 250, 252, 0.25);
   --gradient-color-64: rgba(248, 250, 252, 0.13);
   --gradient-color-77: rgba(248, 250, 252, 0.05);
+  --gray: rgb(110, 115, 114);
   --opacity: 0.5;
   --logo: url("./assets/rounded_light.png");
   --icon: url("./assets/moon.png");
@@ -94,6 +95,7 @@ header {
 
 .search-container {
   align-items: center;
+  background: var(--gradient-color-77);
   border-radius: 0.25rem;
   flex-grow: 0.4;
   display: flex;
@@ -124,7 +126,7 @@ header {
 }
 
 .search {
-  background-color: var(--bg);
+  background: none;
   border: none;
   color: var(--text);
   font-size: 0.9rem;
@@ -259,7 +261,7 @@ header {
     transparent 100%
   );
   bottom: -53%;
-  height: 110%;
+  height: 115%;
   opacity: var(--opacity);
   position: absolute;
   width: 50%;
@@ -357,7 +359,7 @@ header {
   border-bottom: none;
   border-radius: 1rem 1rem 0 0;
   color: var(--text);
-  height: calc(75vh + 2rem);
+  height: calc(65vh + 2rem);
   margin: 0 auto;
   margin-top: -2rem;
   width: 75vw;
@@ -1079,6 +1081,10 @@ footer {
     right: 35%;
     top: 85%;
     width: 6rem;
+  }
+
+  .discover {
+    height: calc(75vh + 2rem);
   }
 
   .discover-container {
