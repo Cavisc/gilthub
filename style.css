@@ -752,6 +752,53 @@ header {
   width: 40%;
 }
 
+footer {
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    var(--gradient-color-77) 0%,
+    var(--bg) 90%
+  );
+  border-top: 1px solid var(--gradient-color-50);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 10vh;
+  justify-content: center;
+}
+
+.copyright {
+  font-size: 1.125rem;
+}
+
+.copyright a {
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.copyright a:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+.creator {
+  color: var(--gray);
+}
+
+.creator a {
+  color: var(--gray);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.creator a:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
 .user-profile {
   background-color: var(--bg-hover);
   display: flex;
