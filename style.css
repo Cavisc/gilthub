@@ -658,6 +658,100 @@ header {
   font-size: 1.25rem;
 }
 
+.cta {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 90vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.cta-characters {
+  align-items: center;
+  background: radial-gradient(
+    var(--bg-hover) 0%,
+    var(--gradient-color-64) 25%,
+    var(--gradient-color-77) 40%,
+    transparent 50%
+  );
+  display: flex;
+  height: 45%;
+  justify-content: center;
+  width: 80%;
+}
+
+.cta-character:nth-child(1) {
+  filter: drop-shadow(20px 0px 10px rgba(0, 0, 0, 0.75));
+  height: 70%;
+  left: 6rem;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-character:nth-child(2) {
+  filter: drop-shadow(20px 0px 10px rgba(0, 0, 0, 0.75));
+  height: 60%;
+  left: 2rem;
+  position: relative;
+  transform: scaleX(-1);
+  z-index: 1;
+}
+
+.cta-character:nth-child(3) {
+  height: 50%;
+  left: -4rem;
+  position: relative;
+  transform: scaleX(-1);
+  z-index: 0;
+}
+
+.cta-title {
+  font-size: 3rem;
+}
+
+.cta-message {
+  color: var(--gray);
+  font-size: 1.5rem;
+}
+
+.cta-search-container {
+  background: var(--text);
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 0.25rem;
+  height: 3.5rem;
+  margin-top: 2rem;
+  padding: 0.25rem;
+  width: 25%;
+}
+
+.cta-search {
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.05rem;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 0.75rem;
+  width: 60%;
+}
+
+.cta-search:focus-within {
+  outline: 1px solid var(--blue);
+}
+
+.cta-button {
+  background: #316e4c;
+  border: none;
+  border-radius: 0.25rem;
+  color: var(--text);
+  font-size: 1.125rem;
+  font-weight: 600;
+  outline: none;
+  width: 40%;
+}
+
 .user-profile {
   background-color: var(--bg-hover);
   display: flex;
@@ -995,6 +1089,41 @@ header {
     border-left: 1px solid var(--gradient-color-64);
   }
 
+  .cta-characters {
+    height: 30%;
+    width: 100%;
+  }
+
+  .cta-character:nth-child(1) {
+    height: auto;
+    width: 30%;
+    left: 3rem;
+  }
+
+  .cta-character:nth-child(2) {
+    height: auto;
+    left: 0;
+    width: 25%;
+  }
+
+  .cta-character:nth-child(3) {
+    height: auto;
+    left: -3rem;
+    width: 15%;
+  }
+
+  .cta-title {
+    font-size: 2.5rem;
+  }
+
+  .cta-message {
+    font-size: 1rem;
+  }
+
+  .cta-search-container {
+    width: 70%;
+  }
+
   .user-profile {
     flex-direction: column;
     height: auto;
@@ -1114,6 +1243,46 @@ header {
 
   .relevance-title {
     font-size: 2.8rem;
+  }
+
+  .cta-characters {
+    height: 30%;
+  }
+
+  .cta-character:nth-child(1) {
+    width: 35%;
+    left: 2rem;
+  }
+
+  .cta-character:nth-child(2) {
+    width: 30%;
+  }
+
+  .cta-character:nth-child(3) {
+    left: -2.25rem;
+    width: 20%;
+  }
+
+  .cta-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .cta-message {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .cta-search-container {
+    width: 90%;
+  }
+
+  .cta-search {
+    font-size: 0.8rem;
+  }
+
+  .cta-button {
+    font-size: 0.8rem;
   }
 
   .user-profile {
