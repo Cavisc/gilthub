@@ -4,8 +4,6 @@ document.addEventListener("keydown", (event) => {
     const ctaSearchInput = document.getElementById("cta-search");
     const activeElement = document.activeElement;
 
-    console.log(activeElement);
-
     if (
       searchInput &&
       (!activeElement ||
