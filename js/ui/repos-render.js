@@ -1,6 +1,7 @@
 import { getLanguageColor } from "../api.js";
+import { escapeHtml } from "../utils.js";
 
-export function renderRepos(repos, currentPage = 1, totalPages = 1) {
+export function renderRepos(repos) {
   const content = document.querySelector(".user-profile");
 
   const oldRepos = content.querySelector(".repos");
@@ -49,14 +50,4 @@ export function renderRepos(repos, currentPage = 1, totalPages = 1) {
 
   content.insertAdjacentHTML("beforeend", reposHtml);
   feather.replace();
-  //attachPaginationEvents();
-}
-
-function escapeHtml(str) {
-  return str.replace(/[&<>]/g, function (m) {
-    if (m === "&") return "&amp;";
-    if (m === "<") return "&lt;";
-    if (m === ">") return "&gt;";
-    return m;
-  });
 }

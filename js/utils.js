@@ -20,3 +20,16 @@ export function formatDate(isoString) {
   const date = new Date(isoString);
   return date.toLocaleDateString("pt-BR");
 }
+
+export function escapeHtml(str) {
+  return str.replace(/[&<>]/g, function (m) {
+    if (m === "&") return "&amp;";
+    if (m === "<") return "&lt;";
+    if (m === ">") return "&gt;";
+    return m;
+  });
+}
+
+export function calcPages(reposNum) {
+  return Math.ceil(reposNum / 30);
+}
