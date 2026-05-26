@@ -29,6 +29,11 @@ export function getLanguageColor(language) {
   return languageColors[language]?.color || "var(--gray)";
 }
 
+export function getLanguageLink(language) {
+  if (!language) return "var(--gray)";
+  return languageColors[language]?.url || "#";
+}
+
 export async function getUser(username) {
   try {
     const cacheKey = `user_${username}`;

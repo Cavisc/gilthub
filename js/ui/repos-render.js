@@ -1,4 +1,4 @@
-import { getLanguageColor } from "../api.js";
+import { getLanguageColor, getLanguageLink } from "../api.js";
 import { escapeHtml } from "../utils.js";
 
 export function renderRepos(repos) {
@@ -28,7 +28,7 @@ export function renderRepos(repos) {
                   ? `
                 <span class="repo-language">
                   <div class="repo-language-color" style="background-color: ${getLanguageColor(repo.language)}"></div>
-                  <span class="repo-language-link">${escapeHtml(repo.language)}</span>
+                  <a href='${getLanguageLink(repo.language)}' target="_blank" class="repo-language-link">${escapeHtml(repo.language)}</a>
                 </span>
               `
                   : ""
