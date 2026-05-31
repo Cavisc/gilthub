@@ -43,19 +43,16 @@ export async function searchData(username) {
     const status = userResult.status;
     switch (status) {
       case 404:
-        renderFail(`Usuário não encontrado`);
+        renderFail(404, username);
         break;
       case 403:
-        renderFail(`Limite excedido (Rate limit)`);
-        break;
-      case 422:
-        renderFail(`Busca inválida`);
+        renderFail(403);
         break;
       case 500:
-        renderFail(`Erro do GitHub`);
+        renderFail(500);
         break;
       default:
-        renderFail(`Ocorreu algum erro: ${userResult.data}`);
+        renderFail();
         break;
     }
     return;

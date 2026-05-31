@@ -11,12 +11,12 @@ export function renderProfile(user) {
             class="user-avatar"
             aria-label="Avatar do usuário"
           />
-          <h1 class="user-name" aria-label="Nome de usuário">
+          <h1 translate="no" class="user-name" aria-label="Nome de usuário">
             ${user.name ? user.name : user.login}
           </h1>
           ${
             user.name
-              ? `<span class="user-username" aria-label="Username de usuário"
+              ? `<span translate="no" class="user-username" aria-label="Username de usuário"
             >${user.login}</span
           >`
               : ``

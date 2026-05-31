@@ -33,3 +33,13 @@ export function escapeHtml(str) {
 export function calcPages(reposNum) {
   return Math.ceil(reposNum / 30);
 }
+
+export function randomIndexes(len) {
+  const numeros = new Set();
+
+  while (numeros.size < len) {
+    numeros.add(Math.floor(Math.random() * 20));
+  }
+
+  return [...numeros];
+}

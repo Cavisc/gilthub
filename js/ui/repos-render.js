@@ -17,7 +17,7 @@ export function renderRepos(repos) {
           <div class="repo" data-repo-id="${repo.id}">
             <div class="repo-name">
               <i data-feather="book-open" class="icon"></i>
-              <a href="${repo.html_url}" class="repo-link" target="_blank" rel="noopener noreferrer">
+              <a translate="no" href="${repo.html_url}" class="repo-link" target="_blank" rel="noopener noreferrer">
                 ${escapeHtml(repo.name)}
               </a>
             </div>
