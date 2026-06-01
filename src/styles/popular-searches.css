@@ -1,0 +1,133 @@
+.popular-searches {
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    var(--gradient-color-77) 0%,
+    var(--bg) 30%
+  );
+  border-top: 1px solid var(--gradient-color-64);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: calc(25vh - 2rem);
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.popular-searches::before,
+.popular-searches::after {
+  bottom: 0;
+  content: "";
+  height: 5rem;
+  pointer-events: none;
+  position: absolute;
+  top: 48%;
+  width: 20rem;
+  z-index: 2;
+}
+
+.popular-searches::before {
+  background: linear-gradient(to right, var(--bg) 0%, transparent 100%);
+  left: 0;
+}
+
+.popular-searches::after {
+  background: linear-gradient(to left, var(--bg) 0%, transparent 100%);
+  right: 0;
+}
+
+.popular-searches-title {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.popular-searches-icon {
+  stroke-width: 4px;
+}
+
+.popular-searches-suggestions {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  -ms-overflow-style: none;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.popular-searches-suggestions::-webkit-scrollbar {
+  display: none;
+}
+
+.popular-searches-suggestion {
+  align-items: center;
+  border: 1px solid var(--gray);
+  border-radius: 2rem;
+  cursor: pointer;
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.popular-searches-suggestion:hover,
+.popular-searches-suggestion:active {
+  background-color: var(--bg-hover);
+}
+
+.suggestion-avatar {
+  border-radius: 100%;
+  height: 2rem;
+  width: 2rem;
+}
+
+.suggestion-username {
+  color: var(--gray);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.1s ease-in-out;
+}
+
+.popular-searches-suggestion:hover .suggestion-username,
+.popular-searches-suggestion:active .suggestion-username {
+  color: var(--text);
+}
+
+.suggestion-icon {
+  color: var(--gray);
+  height: 1.1rem;
+  stroke-width: 3px;
+  transition: all 0.1s ease-in-out;
+  width: 1.1rem;
+}
+
+.popular-searches-suggestion:hover .suggestion-icon,
+.popular-searches-suggestion:active .suggestion-icon {
+  color: var(--text);
+}
+
+@media (max-width: 834px) {
+  .popular-searches::before,
+  .popular-searches::after {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .popular-searches::before,
+  .popular-searches::after {
+    width: 5rem;
+  }
+
+  .popular-searches-icon {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .popular-searches-title {
+    font-size: 1rem;
+  }
+}

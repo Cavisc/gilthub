@@ -1,4 +1,5 @@
 import { formatDate } from "../utils.js";
+
 export function renderProfile(user) {
   const main = document.querySelector("main");
 

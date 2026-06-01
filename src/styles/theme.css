@@ -1,0 +1,19 @@
+.theme-toggle {
+  background-color: var(--bg);
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  height: 2rem;
+  outline: none;
+  width: 2rem;
+}
+
+.theme-toggle:focus {
+  outline: 2px solid var(--text);
+}
+
+.theme-icon {
+  background: var(--icon) no-repeat center/cover;
+  height: 100%;
+  width: 100%;
+}

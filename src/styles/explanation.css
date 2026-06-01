@@ -1,0 +1,55 @@
+.explanation {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  gap: 4rem;
+  margin-top: 4rem;
+  text-align: justify;
+  width: 50%;
+}
+
+.explanation-word {
+  color: var(--gray);
+  font-size: 1.0625rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.explanation-word strong {
+  background-color: var(--gray);
+  border-radius: 0.25rem;
+  color: var(--bg);
+  font-weight: bold;
+  padding: 0.025rem 0.25rem;
+}
+
+.explanation-word em,
+.explanation-use em {
+  font-weight: bold;
+}
+
+.explanation-use {
+  background-color: var(--text);
+  border-radius: 0.5rem;
+  color: var(--bg);
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.explanation-use strong {
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .explanation {
+    width: 100%;
+  }
+
+  .explanation-use {
+    border-radius: 0;
+  }
+}

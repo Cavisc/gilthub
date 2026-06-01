@@ -1,0 +1,26 @@
+.load-container {
+  align-items: center;
+  animation: fadeIn 0.5s ease-in;
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+  height: calc(100vh - 6rem);
+  justify-content: center;
+  width: 100vw;
+  will-change: opacity;
+}
+
+.load {
+  animation: goUp 1s ease-in-out infinite;
+  background: var(--gif-load) no-repeat center/contain;
+  filter: drop-shadow(15px 0px 10px var(--gradient-color-64));
+  height: 6rem;
+  width: 6rem;
+  will-change: transform;
+}
+
+.load-message {
+  color: var(--gray);
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}

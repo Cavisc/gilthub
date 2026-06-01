@@ -1,4 +1,4 @@
-import { popularUsers } from "../../data/popularUsers.js";
+import { popularUsers } from "../data/popularUsers.js";
 import { searchData } from "../main.js";
 import { randomIndexes } from "../utils.js";
 
@@ -36,7 +36,7 @@ export function renderFail(errorCode, username) {
 
       main.innerHTML = `<section class="fail-container">
         <img
-          src="./assets/fail.png"
+          src="./src/assets/fail.png"
           alt="Desenho de um gato"
           class="fail-img"
         />
@@ -92,7 +92,7 @@ export function renderFail(errorCode, username) {
     case 403:
       main.innerHTML = `<section class="fail-container">
         <img
-          src="./assets/fail.png"
+          src="./src/assets/fail.png"
           alt="Desenho de um gato"
           class="fail-img"
         />
@@ -135,7 +135,7 @@ export function renderFail(errorCode, username) {
     case 500:
       main.innerHTML = `<section class="fail-container">
         <img
-          src="./assets/fail.png"
+          src="./src/assets/fail.png"
           alt="Desenho de um gato"
           class="fail-img"
         />
@@ -170,7 +170,7 @@ export function renderFail(errorCode, username) {
     default:
       main.innerHTML = `<section class="fail-container">
         <img
-          src="./assets/fail.png"
+          src="./src/assets/fail.png"
           alt="Desenho de um gato"
           class="fail-img"
         />

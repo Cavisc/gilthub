@@ -1,0 +1,208 @@
+.fail-container {
+  animation: fadeIn 0.25s ease-in;
+  background: linear-gradient(
+    20deg,
+    var(--gradient-color-64) 0%,
+    transparent 70%
+  );
+  border: 1px solid var(--gray);
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 4rem;
+  height: calc(100vh - 14rem);
+  justify-content: center;
+  margin: 4rem;
+  padding: 8rem 0;
+}
+
+.fail-img {
+  height: fit-content;
+  width: 30%;
+}
+
+.fail-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 35%;
+}
+
+.fail-title {
+  align-items: center;
+  display: flex;
+  gap: 0.25rem;
+}
+
+.fail-message {
+  border-bottom: 1px solid var(--gradient-color-64);
+  color: var(--gray);
+  font-size: large;
+  margin-bottom: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.fail-tips {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fail-tip a {
+  color: var(--blue);
+  transition: all 0.1s ease-in-out;
+}
+
+.fail-tip a:hover,
+.fail-tip a:active {
+  color: var(--gray);
+}
+
+.fail-tip-icon {
+  color: var(--text);
+}
+
+.fail-popular-searches {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.fail-popular-searches-suggestions {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.fail-popular-searches-suggestion {
+  align-items: center;
+  border: 1px solid var(--gray);
+  border-radius: 2rem;
+  cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.fail-popular-searches-suggestion:hover,
+.fail-popular-searches-suggestion:active {
+  background-color: var(--bg-hover);
+}
+
+.fail-suggestion-avatar {
+  border-radius: 100%;
+  height: 2rem;
+  width: 2rem;
+}
+
+.fail-suggestion-username {
+  color: var(--gray);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.1s ease-in-out;
+}
+
+.fail-suggestion-icon {
+  color: var(--gray);
+  height: 1.1rem;
+  stroke-width: 3px;
+  transition: all 0.1s ease-in-out;
+  width: 1.1rem;
+}
+
+.fail-requisition-title {
+  margin-top: 1.75rem;
+}
+
+.fail-requisition-link {
+  color: var(--blue);
+  transition: all 0.1s ease-in-out;
+}
+
+.fail-requisition-icon {
+  color: var(--blue);
+  height: 1rem;
+  width: 1rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.fail-requisition-link:hover,
+.fail-requisition-link:hover .fail-requisition-icon,
+.fail-requisition-link:active,
+.fail-requisition-link:active .fail-requisition-icon {
+  color: var(--gray);
+}
+
+@media (max-width: 834px) {
+  .fail-container {
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: calc(100vh - 8rem);
+    margin: 2rem;
+    padding: 2rem;
+  }
+
+  .fail-img {
+    height: fit-content;
+    width: 70%;
+  }
+
+  .fail-infos {
+    justify-content: center;
+    width: 70%;
+  }
+
+  .fail-popular-searches-title {
+    text-align: center;
+  }
+
+  .fail-popular-searches-suggestions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .fail-container {
+    align-items: center;
+    border: none;
+    gap: 1rem;
+    height: calc(100vh - 4rem);
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .fail-infos {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .fail-popular-searches-title {
+    text-align: center;
+  }
+
+  .fail-popular-searches-suggestions {
+    flex-wrap: wrap;
+  }
+
+  .fail-popular-searches-suggestion {
+    max-width: 40vw;
+  }
+
+  .fail-suggestion-avatar {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .fail-suggestion-username {
+    font-size: 0.8rem;
+    overflow-x: hidden;
+  }
+
+  .fail-suggestion-icon {
+    height: 0.9rem;
+  }
+}

@@ -1,0 +1,155 @@
+.discover {
+  background: var(--bg-translucid);
+  border: 1px solid var(--gradient-color-50);
+  border-bottom: none;
+  border-radius: 1rem 1rem 0 0;
+  color: var(--text);
+  height: calc(65vh + 2rem);
+  margin: 0 auto;
+  margin-top: -2rem;
+  width: 75vw;
+}
+
+.discover-container {
+  align-items: center;
+  background: var(--bg);
+  border-radius: 0.5rem 0.5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 1rem 1rem 0;
+  padding: 6rem 6rem 2rem;
+}
+
+.discover-title {
+  font-size: 3rem;
+}
+
+.discover-message {
+  color: var(--gray);
+  font-size: 1.375rem;
+  margin-top: 1.5rem;
+}
+
+.discover-cards {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  gap: 1.5rem;
+}
+
+.discover-card {
+  align-items: center;
+  background: linear-gradient(160deg, var(--bg-hover) 0%, var(--bg) 100%);
+  border: 1px solid var(--gradient-color-50);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 60%;
+  padding: 2rem;
+  text-align: center;
+  width: 25%;
+}
+
+.card-icon {
+  height: 4rem;
+  width: 4rem;
+}
+
+.card-icon-users {
+  color: #2a3ca5;
+  fill: #2a3ca5;
+}
+
+.card-icon-book {
+  color: #316e4c;
+  fill: #4ba371;
+}
+
+.card-icon-star {
+  color: #fcc302;
+  fill: #fcc302;
+}
+
+.card-icon-code {
+  color: #804eed;
+  stroke-width: 3px;
+}
+
+.card-title {
+  margin-top: 0.5rem;
+}
+
+.card-description {
+  color: var(--gray);
+  font-size: 1.125rem;
+  line-height: 1.725rem;
+}
+
+@media (max-width: 834px) {
+  .discover {
+    height: calc(75vh + 2rem);
+  }
+
+  .discover-container {
+    padding: 4rem 2rem 2rem;
+    text-align: center;
+  }
+
+  .discover-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .discover-card {
+    height: 45%;
+    width: 40%;
+  }
+
+  .card-icon {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .discover {
+    height: auto;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .discover-container {
+    height: 100%;
+    padding: 4rem 2rem 2rem;
+    text-align: center;
+  }
+
+  .discover-title {
+    font-size: 2rem;
+  }
+
+  .discover-message {
+    font-size: 1.25rem;
+  }
+
+  .discover-cards {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .discover-card {
+    width: 100%;
+  }
+}

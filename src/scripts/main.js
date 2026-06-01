@@ -14,6 +14,17 @@ let totalPages = null;
 
 loadLanguageColors();
 
+ctaSearchInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    if (ctaSearchInput.value.trim()) {
+      const username = ctaSearchInput.value;
+      page = 1;
+      searchData(username);
+      searchInput.value = username;
+    }
+  }
+});
+
 ctaButton.addEventListener("click", () => {
   if (ctaSearchInput.value.trim()) {
     const username = ctaSearchInput.value;

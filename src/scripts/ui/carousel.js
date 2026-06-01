@@ -1,4 +1,4 @@
-import { popularUsers } from "../../data/popularUsers.js";
+import { popularUsers } from "../data/popularUsers.js";
 import { searchData } from "../main.js";
 
 (function () {
